@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Github, Linkedin, Mail, ChevronUp, Home, User, Briefcase, FileText, Image, Phone, Camera, Coffee, Music, Gamepad, Brain } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronUp, Home, User, Briefcase, FileText, Image, Phone, Camera, Car, Coffee, Music, Gamepad, Brain } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from './ThemeToggle'
 import { Gallery } from './Gallery'
@@ -63,27 +63,27 @@ const Portfolio = () => {
   };
 
   const personalInterests = [
-    { icon: Camera, label: 'Avid Videographer', details: 'Video Production and Editing' },
-    { icon: Camera, label: 'Photography', details: 'Street & Car photography' },
-    { icon: Gamepad, label: 'Game Development', details: 'Unity & game design hobbyist' },
-    { icon: Brain, label: 'AI', details: 'Deep learning & neural networks' },
-    { icon: Coffee, label: 'Coffee Enthusiast', details: 'Pour-over specialist & home roaster' },
-    { icon: Music, label: 'Music Listener', details: 'Interested in genres like R&B, Alt, and Indie' },
+    { icon: Camera, label: 'Videographer', details: 'Video Production and Editing' },
+    { icon: Camera, label: 'Photography', details: 'Street & Car Photography' },
+    { icon: Gamepad, label: 'Game Development', details: 'Unity & Game Design Hobbyist' },
+    { icon: Brain, label: 'AI', details: 'Generative & Neural networks' },
+    { icon: Car, label: 'Car Enthusiast', details: 'Fascinated by Cars and Gears' },
+    { icon: Music, label: 'Music Listener', details: 'Interested in Genres like R&B, Alt, and Indie' },
   ];
 
   const technologies = {
     frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
-    backend: ['Node.js', 'Python', 'PostgreSQL', 'AWS'],
-    tools: ['Git', 'Docker', 'Kubernetes',],
-    design: ['Figma', 'Adobe XD', 'Design Systems', 'Motion Design']
+    backend: ['Node.js', 'Python', 'PostgreSQL'],
+    tools: ['Git', 'Docker'],
+    design: ['Figma', 'Adobe XD']
   };
 
   const projects = [
     {
-      title: "Neural Canvas",
+      title: "Project 1",
       description: "AI-powered creative tool that transforms text descriptions into artistic visualizations",
       gradient: "bg-gradient-to-br from-purple-600 via-blue-500 to-orange-500",
-      tech: ["React", "Python", "TensorFlow", "AWS"],
+      tech: ["React", "CSS", "TypeScript", "Docker"],
       metrics: {
         users: "10K+",
         images: "21K+",
@@ -91,7 +91,7 @@ const Portfolio = () => {
       }
     },
     {
-      title: "DevFlow",
+      title: "Project 2",
       description: "Developer productivity suite with intelligent workflow automation",
       gradient: "bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500",
       tech: ["TypeScript", "Node.js", "PostgreSQL", "Docker"],
